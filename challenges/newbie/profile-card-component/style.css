@@ -1,0 +1,122 @@
+/* Import Font */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+/* Root Styles */
+html {
+  font-size: 18px;
+}
+
+:root {
+  --color-1: hsl(185, 75%, 39%); /* Dark cyan */
+  --color-2: hsl(229, 23%, 23%); /* Very dark desaturated blue */
+  --color-3: hsl(227, 10%, 46%); /* Dark grayish blue */
+  --color-neutral: hsla(0, 0%, 59%, 0.4); /* Dark gray */
+  --font-primary: "Kumbh Sans", sans-serif;
+}
+
+/* General Styles */
+* {
+  font-family: var(--font-primary);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-1);
+  background-image: url(./images/bg-pattern-top.svg),
+    url(./images/bg-pattern-bottom.svg);
+  background-position: top -45vw left -30vw, bottom -60vw right -20vw;
+  background-repeat: no-repeat;
+  background-size: 80vw;
+}
+
+main {
+  height: 100vh;
+  display: grid;
+}
+
+.card {
+  max-width: 320px;
+  width: 100%;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  color: var(--color-2);
+}
+
+.card-pattern {
+  height: 7rem;
+  background-image: url(./images/bg-pattern-card.svg);
+}
+
+.top {
+  display: grid;
+  justify-items: center;
+}
+
+.image {
+  background-image: url(./images/image-victor.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  margin-top: -2.5rem;
+}
+
+.name {
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.name > span {
+  color: var(--color-3);
+  font-weight: 400;
+  margin: 0 0.2rem;
+}
+
+.location {
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  color: var(--color-3);
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1.2rem 0;
+  border-top: 1.2px solid var(--color-neutral);
+}
+
+.stat {
+  justify-self: center;
+  text-align: center;
+}
+
+.stat > h2 {
+  font-size: 1rem;
+  margin-bottom: -0.15rem;
+}
+
+.stat > p {
+  font-size: 0.5rem;
+  font-weight: 700;
+  color: var(--color-3);
+  display: inline-block;
+  transform: scale(1, 0.9);
+  letter-spacing: 0.05rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: #fff;
+  margin-top: -2rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

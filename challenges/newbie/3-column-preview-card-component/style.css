@@ -1,0 +1,127 @@
+/* Import Font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+html {
+  font-size: 15px;
+}
+
+/* Variables and Roots */
+:root {
+  --font-default: sans-serif;
+  --font-primary: "Big Shoulders Display", cursive;
+  --font-secondary: "Lexend Deca", sans-serif;
+  --color-01: hsl(31, 77%, 52%);
+  --color-02: hsl(184, 100%, 22%);
+  --color-03: hsl(179, 100%, 13%);
+  --color-p: hsla(0, 0%, 100%, 0.75);
+  --color-bg: hsl(0, 0%, 95%);
+  --color-h: hsl(0, 0%, 95%);
+  --color-btn: hsl(0, 0%, 95%);
+}
+
+/* Global Styles */
+* {
+  font-family: var(--font-default);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Main Content Styles */
+body {
+  background-color: var(--color-bg);
+}
+
+main {
+  padding: 6rem 1.5rem;
+}
+
+div {
+  border-radius: 0.9rem;
+  overflow: hidden;
+  max-width: 400px;
+  margin: auto;
+}
+
+article {
+  padding: 3rem;
+}
+
+img {
+  margin-bottom: 1.5rem;
+  width: 5rem;
+}
+
+h2 {
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: var(--color-h);
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-family: var(--font-secondary);
+  font-size: 1rem;
+  color: var(--color-p);
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+button {
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  font-family: var(--font-secondary);
+  font-size: 1rem;
+  border: 2px solid var(--color-btn);
+  background-color: var(--color-btn);
+}
+
+.sedan {
+  background-color: var(--color-01);
+}
+
+.sedan button {
+  color: var(--color-01);
+}
+
+.suv {
+  background-color: var(--color-02);
+}
+
+.suv button {
+  color: var(--color-02);
+}
+
+.luxury {
+  background-color: var(--color-03);
+}
+
+.luxury button {
+  color: var(--color-03);
+}
+
+/* Hover State */
+button:hover {
+  background-color: transparent;
+  color: var(--color-btn);
+}
+
+/* Attribution CSS */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Screen sizes of 1024px and above */
+@media screen and (min-width: 1024px) {
+  div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 900px;
+    margin: auto;
+  }
+}
