@@ -8,25 +8,45 @@
     <title>Divine Orji - Frontend Mentor</title>
   </head>
   <body>
-    <h1>Solution to Frontend Mentor Challenges</h1>
-    <p>Just testing this out</p>
+    <header>
+      <nav class="container">
+        <a href="/">
+          <h1 class="page-title">Frontend Mentor Challenges</h1>
+        </a>
+        <p>
+          This is a compilation of all my solutions to challenges from
+          <a href="https://frontendmentor.io">frontendmentor.io</a>
+        </p>
+      </nav>
+    </header>
 
-    <section class="grid-3">
-      <a href="/challenges/newbie/">
-        <div class="card">Newbie</div>
-      </a>
-      <a href="/challenges/junior/">
-        <div class="card">Junior</div>
-      </a>
-      <a href="/challenges/intermediate/">
-        <div class="card">Intermediate</div>
-      </a>
-      <a href="/challenges/advanced/">
-        <div class="card">Advanced</div>
-      </a>
-      <a href="/challenges/guru/">
-        <div class="card">Guru</div>
-      </a>
-    </section>
+    <main class="container">
+      <section class="grid-3">
+        <a href="/challenges/newbie/" class="card">
+          <h2 class="card-title">Newbie</h2>
+        </a>
+        <a href="/challenges/junior/" class="card">
+          <h2 class="card-title">Junior</h2>
+        </a>
+        <a href="/challenges/intermediate/" class="card">
+          <h2 class="card-title">Intermediate</h2>
+        </a>
+        <a href="/challenges/advanced/" class="card">
+          <h2 class="card-title">Advanced</h2>
+        </a>
+        <a href="/challenges/guru/" class="card">
+          <h2 class="card-title">Guru</h2>
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      <section class="container">
+        &copy;Divine Orji,
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+      </section>
+    </footer>
   </body>
 </html>
